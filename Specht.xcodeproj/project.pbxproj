@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		362A54401C9BD5E00056B653 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362A543F1C9BD5E00056B653 /* AppDelegate.swift */; };
+		362A54421C9BD5E00056B653 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362A54411C9BD5E00056B653 /* Assets.xcassets */; };
+		362A54451C9BD5E00056B653 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362A54431C9BD5E00056B653 /* MainMenu.xib */; };
+		362A54501C9BD5E00056B653 /* SpechtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362A544F1C9BD5E00056B653 /* SpechtTests.swift */; };
+		362A545B1C9BD5E10056B653 /* SpechtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362A545A1C9BD5E10056B653 /* SpechtUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		362A544C1C9BD5E00056B653 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 362A54341C9BD5E00056B653 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 362A543B1C9BD5E00056B653;
+			remoteInfo = Specht;
+		};
+		362A54571C9BD5E10056B653 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 362A54341C9BD5E00056B653 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 362A543B1C9BD5E00056B653;
+			remoteInfo = Specht;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		362A543C1C9BD5E00056B653 /* Specht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specht.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		362A543F1C9BD5E00056B653 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		362A54411C9BD5E00056B653 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		362A54441C9BD5E00056B653 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		362A54461C9BD5E00056B653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362A544B1C9BD5E00056B653 /* SpechtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpechtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		362A544F1C9BD5E00056B653 /* SpechtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpechtTests.swift; sourceTree = "<group>"; };
+		362A54511C9BD5E00056B653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362A54561C9BD5E10056B653 /* SpechtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpechtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		362A545A1C9BD5E10056B653 /* SpechtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpechtUITests.swift; sourceTree = "<group>"; };
+		362A545C1C9BD5E10056B653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		362A54391C9BD5E00056B653 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362A54481C9BD5E00056B653 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362A54531C9BD5E10056B653 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		362A54331C9BD5E00056B653 = {
+			isa = PBXGroup;
+			children = (
+				362A543E1C9BD5E00056B653 /* Specht */,
+				362A544E1C9BD5E00056B653 /* SpechtTests */,
+				362A54591C9BD5E10056B653 /* SpechtUITests */,
+				362A543D1C9BD5E00056B653 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		362A543D1C9BD5E00056B653 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				362A543C1C9BD5E00056B653 /* Specht.app */,
+				362A544B1C9BD5E00056B653 /* SpechtTests.xctest */,
+				362A54561C9BD5E10056B653 /* SpechtUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		362A543E1C9BD5E00056B653 /* Specht */ = {
+			isa = PBXGroup;
+			children = (
+				362A543F1C9BD5E00056B653 /* AppDelegate.swift */,
+				362A54411C9BD5E00056B653 /* Assets.xcassets */,
+				362A54431C9BD5E00056B653 /* MainMenu.xib */,
+				362A54461C9BD5E00056B653 /* Info.plist */,
+			);
+			path = Specht;
+			sourceTree = "<group>";
+		};
+		362A544E1C9BD5E00056B653 /* SpechtTests */ = {
+			isa = PBXGroup;
+			children = (
+				362A544F1C9BD5E00056B653 /* SpechtTests.swift */,
+				362A54511C9BD5E00056B653 /* Info.plist */,
+			);
+			path = SpechtTests;
+			sourceTree = "<group>";
+		};
+		362A54591C9BD5E10056B653 /* SpechtUITests */ = {
+			isa = PBXGroup;
+			children = (
+				362A545A1C9BD5E10056B653 /* SpechtUITests.swift */,
+				362A545C1C9BD5E10056B653 /* Info.plist */,
+			);
+			path = SpechtUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		362A543B1C9BD5E00056B653 /* Specht */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 362A545F1C9BD5E10056B653 /* Build configuration list for PBXNativeTarget "Specht" */;
+			buildPhases = (
+				362A54381C9BD5E00056B653 /* Sources */,
+				362A54391C9BD5E00056B653 /* Frameworks */,
+				362A543A1C9BD5E00056B653 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specht;
+			productName = Specht;
+			productReference = 362A543C1C9BD5E00056B653 /* Specht.app */;
+			productType = "com.apple.product-type.application";
+		};
+		362A544A1C9BD5E00056B653 /* SpechtTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 362A54621C9BD5E10056B653 /* Build configuration list for PBXNativeTarget "SpechtTests" */;
+			buildPhases = (
+				362A54471C9BD5E00056B653 /* Sources */,
+				362A54481C9BD5E00056B653 /* Frameworks */,
+				362A54491C9BD5E00056B653 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				362A544D1C9BD5E00056B653 /* PBXTargetDependency */,
+			);
+			name = SpechtTests;
+			productName = SpechtTests;
+			productReference = 362A544B1C9BD5E00056B653 /* SpechtTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		362A54551C9BD5E10056B653 /* SpechtUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 362A54651C9BD5E10056B653 /* Build configuration list for PBXNativeTarget "SpechtUITests" */;
+			buildPhases = (
+				362A54521C9BD5E10056B653 /* Sources */,
+				362A54531C9BD5E10056B653 /* Frameworks */,
+				362A54541C9BD5E10056B653 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				362A54581C9BD5E10056B653 /* PBXTargetDependency */,
+			);
+			name = SpechtUITests;
+			productName = SpechtUITests;
+			productReference = 362A54561C9BD5E10056B653 /* SpechtUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		362A54341C9BD5E00056B653 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Zhuhao Wang";
+				TargetAttributes = {
+					362A543B1C9BD5E00056B653 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					362A544A1C9BD5E00056B653 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 362A543B1C9BD5E00056B653;
+					};
+					362A54551C9BD5E10056B653 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 362A543B1C9BD5E00056B653;
+					};
+				};
+			};
+			buildConfigurationList = 362A54371C9BD5E00056B653 /* Build configuration list for PBXProject "Specht" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 362A54331C9BD5E00056B653;
+			productRefGroup = 362A543D1C9BD5E00056B653 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				362A543B1C9BD5E00056B653 /* Specht */,
+				362A544A1C9BD5E00056B653 /* SpechtTests */,
+				362A54551C9BD5E10056B653 /* SpechtUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		362A543A1C9BD5E00056B653 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362A54421C9BD5E00056B653 /* Assets.xcassets in Resources */,
+				362A54451C9BD5E00056B653 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362A54491C9BD5E00056B653 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362A54541C9BD5E10056B653 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		362A54381C9BD5E00056B653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362A54401C9BD5E00056B653 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362A54471C9BD5E00056B653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362A54501C9BD5E00056B653 /* SpechtTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		362A54521C9BD5E10056B653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				362A545B1C9BD5E10056B653 /* SpechtUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		362A544D1C9BD5E00056B653 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 362A543B1C9BD5E00056B653 /* Specht */;
+			targetProxy = 362A544C1C9BD5E00056B653 /* PBXContainerItemProxy */;
+		};
+		362A54581C9BD5E10056B653 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 362A543B1C9BD5E00056B653 /* Specht */;
+			targetProxy = 362A54571C9BD5E10056B653 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		362A54431C9BD5E00056B653 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				362A54441C9BD5E00056B653 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		362A545D1C9BD5E10056B653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		362A545E1C9BD5E10056B653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		362A54601C9BD5E10056B653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Specht/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.Specht;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		362A54611C9BD5E10056B653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Specht/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.Specht;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		362A54631C9BD5E10056B653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpechtTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.SpechtTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Specht.app/Contents/MacOS/Specht";
+			};
+			name = Debug;
+		};
+		362A54641C9BD5E10056B653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpechtTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.SpechtTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Specht.app/Contents/MacOS/Specht";
+			};
+			name = Release;
+		};
+		362A54661C9BD5E10056B653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpechtUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.SpechtUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Specht;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		362A54671C9BD5E10056B653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpechtUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.SpechtUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Specht;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		362A54371C9BD5E00056B653 /* Build configuration list for PBXProject "Specht" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362A545D1C9BD5E10056B653 /* Debug */,
+				362A545E1C9BD5E10056B653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		362A545F1C9BD5E10056B653 /* Build configuration list for PBXNativeTarget "Specht" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362A54601C9BD5E10056B653 /* Debug */,
+				362A54611C9BD5E10056B653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		362A54621C9BD5E10056B653 /* Build configuration list for PBXNativeTarget "SpechtTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362A54631C9BD5E10056B653 /* Debug */,
+				362A54641C9BD5E10056B653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		362A54651C9BD5E10056B653 /* Build configuration list for PBXNativeTarget "SpechtUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362A54661C9BD5E10056B653 /* Debug */,
+				362A54671C9BD5E10056B653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 362A54341C9BD5E00056B653 /* Project object */;
+}
