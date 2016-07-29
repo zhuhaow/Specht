@@ -1,0 +1,36 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B5295673D40444D86A0D76339F7E4FC3397BF632" : 0,
+    "E7F16E682DEFAA475C57A9EB4974749FA6202939" : 0,
+    "B97EEED760BDEDB08668E142659F81205FA7D2F5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "204C69A1-4AAA-4BF2-B61E-E41623A8E687",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B5295673D40444D86A0D76339F7E4FC3397BF632" : "Specht\/NEKit\/tun2socks\/tun2socks\/lwip\/",
+    "E7F16E682DEFAA475C57A9EB4974749FA6202939" : "Specht\/NEKit\/",
+    "B97EEED760BDEDB08668E142659F81205FA7D2F5" : "Specht\/NEKit\/tun2socks\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Specht",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Specht.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/git.savannah.nongnu.org\/lwip.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B5295673D40444D86A0D76339F7E4FC3397BF632"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhuhaow\/tun2socks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B97EEED760BDEDB08668E142659F81205FA7D2F5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhuhaow\/NEKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E7F16E682DEFAA475C57A9EB4974749FA6202939"
+    }
+  ]
+}

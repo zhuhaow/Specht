@@ -1,0 +1,50 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B5295673D40444D86A0D76339F7E4FC3397BF632+++995A6E9" : 0,
+    "E7F16E682DEFAA475C57A9EB4974749FA6202939+++1BD3DFE" : 0,
+    "B97EEED760BDEDB08668E142659F81205FA7D2F5+++E6FE76C" : 0,
+    "B97EEED760BDEDB08668E142659F81205FA7D2F5+++EAAE55D" : 0,
+    "B97EEED760BDEDB08668E142659F81205FA7D2F5+++B9DC0C0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D4C74621-FB5F-476C-B1E0-F04CF5196413",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B5295673D40444D86A0D76339F7E4FC3397BF632+++995A6E9" : "Specht\/NEKit\/tun2socks\/tun2socks\/lwip\/",
+    "E7F16E682DEFAA475C57A9EB4974749FA6202939+++1BD3DFE" : "Specht\/NEKit\/",
+    "B97EEED760BDEDB08668E142659F81205FA7D2F5+++E6FE76C" : "Specht\/NEKit\/tun2socks\/",
+    "B97EEED760BDEDB08668E142659F81205FA7D2F5+++EAAE55D" : "Specht\/NEKit\/tun2socks\/tun2socks\/",
+    "B97EEED760BDEDB08668E142659F81205FA7D2F5+++B9DC0C0" : "Specht\/NEKit\/tun2socks\/tun2socks\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Specht",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Specht.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/git.savannah.nongnu.org\/lwip.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B5295673D40444D86A0D76339F7E4FC3397BF632+++995A6E9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhuhaow\/tun2socks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B97EEED760BDEDB08668E142659F81205FA7D2F5+++B9DC0C0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhuhaow\/tun2socks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B97EEED760BDEDB08668E142659F81205FA7D2F5+++E6FE76C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhuhaow\/tun2socks.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B97EEED760BDEDB08668E142659F81205FA7D2F5+++EAAE55D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhuhaow\/NEKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E7F16E682DEFAA475C57A9EB4974749FA6202939+++1BD3DFE"
+    }
+  ]
+}
