@@ -573,8 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Specht/Specht.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer: Zhuhao Wang (2LQC8583G4)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer: Zhuhao Wang (2LQC8583G4)";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -595,8 +594,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Specht/Specht.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer: Zhuhao Wang (2LQC8583G4)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer: Zhuhao Wang (2LQC8583G4)";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -608,7 +606,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.Specht;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "080fb898-cd1b-478a-9b6e-af4767b4bca3";
+				PROVISIONING_PROFILE = "d5e4c196-c330-41c1-9c96-a76e1f1e8621";
 			};
 			name = Release;
 		};
@@ -617,8 +615,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CODE_SIGN_ENTITLEMENTS = SpechtTunnelPacketProvider/SpechtTunnelPacketProvider.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer: Zhuhao Wang (2LQC8583G4)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer: Zhuhao Wang (2LQC8583G4)";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -640,8 +637,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CODE_SIGN_ENTITLEMENTS = SpechtTunnelPacketProvider/SpechtTunnelPacketProvider.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer: Zhuhao Wang (2LQC8583G4)";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer: Zhuhao Wang (2LQC8583G4)";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -652,7 +648,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.Specht.SpechtTunnelPacketProvider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "25a846a7-bdf1-45a4-a355-81653d0b718b";
+				PROVISIONING_PROFILE = "aae19adb-9146-40a8-bfc9-3fb67e89eca7";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
 			};
