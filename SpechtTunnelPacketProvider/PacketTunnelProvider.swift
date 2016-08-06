@@ -38,12 +38,12 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         networkSettings.IPv4Settings = ipv4Settings
 
         let proxySettings = NEProxySettings()
-        proxySettings.autoProxyConfigurationEnabled = true
-        proxySettings.proxyAutoConfigurationJavaScript = "function FindProxyForURL(url, host) {return \"SOCKS 127.0.0.1:\(proxyPort)\";}"
-        //        proxySettings.HTTPEnabled = true
-        //        proxySettings.HTTPServer = NEProxyServer(address: "127.0.0.1", port: 8016)
-        //        proxySettings.HTTPSEnabled = true
-        //        proxySettings.HTTPSServer = NEProxyServer(address: "127.0.0.1", port: 8016)
+        //        proxySettings.autoProxyConfigurationEnabled = true
+        //        proxySettings.proxyAutoConfigurationJavaScript = "function FindProxyForURL(url, host) {return \"SOCKS 127.0.0.1:\(proxyPort)\";}"
+        proxySettings.HTTPEnabled = true
+        proxySettings.HTTPServer = NEProxyServer(address: "127.0.0.1", port: proxyPort)
+        proxySettings.HTTPSEnabled = true
+        proxySettings.HTTPSServer = NEProxyServer(address: "127.0.0.1", port: proxyPort)
         proxySettings.excludeSimpleHostnames = true
         // This will match all domains
         proxySettings.matchDomains = [""]
@@ -79,7 +79,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
                 return
             }
 
-            ProxyServer.mainProxy = GCDSOCKS5ProxyServer(address: IPv4Address(fromString: "127.0.0.1"), port: Port(port: UInt16(self.proxyPort)))
+            ProxyServer.mainProxy = GCDHTTPProxyServer(address: IPv4Address(fromString: "127.0.0.1"), port: Port(port: UInt16(self.proxyPort)))
             try! ProxyServer.mainProxy.start()
 
             completionHandler(nil)
