@@ -11,17 +11,17 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
     override func startTunnelWithOptions(options: [String : NSObject]?, completionHandler: (NSError?) -> Void) {
         DDLog.removeAllLoggers()
         DDLog.addLogger(DDASLLogger.sharedInstance(), withLevel: DDLogLevel.All)
-        DDLogInfo("Extension Started.")
 
         let configuration = Configuration()
-        configuration.load(fromConfigString: (protocolConfiguration as! NETunnelProviderProtocol).providerConfiguration!["config"] as! String)
+        try! configuration.load(fromConfigString: (protocolConfiguration as! NETunnelProviderProtocol).providerConfiguration!["config"] as! String)
         RuleManager.currentManager = configuration.ruleManager
         proxyPort = configuration.proxyPort ?? 9090
-
+//
         RawSocketFactory.TunnelProvider = self
 
         // the `tunnelRemoteAddress` is meaningless because we are not creating a tunnel.
         let networkSettings = NEPacketTunnelNetworkSettings(tunnelRemoteAddress: "8.8.8.8")
+        networkSettings.MTU = 1500
 
         let ipv4Settings = NEIPv4Settings(addresses: ["192.169.89.1"], subnetMasks: ["255.255.255.0"])
         if enablePacketProcessing {
@@ -50,10 +50,12 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         networkSettings.proxySettings = proxySettings
 
         // the 198.18.0.0/15 is reserved for benchmark.
-        let DNSSettings = NEDNSSettings(servers: ["198.18.0.1"])
-        DNSSettings.matchDomains = [""]
-        DNSSettings.matchDomainsNoSearch = false
-        networkSettings.DNSSettings = DNSSettings
+        if enablePacketProcessing {
+            let DNSSettings = NEDNSSettings(servers: ["198.18.0.1"])
+            DNSSettings.matchDomains = [""]
+            DNSSettings.matchDomainsNoSearch = false
+            networkSettings.DNSSettings = DNSSettings
+        }
 
         if enablePacketProcessing {
             interface = TUNInterface(packetFlow: packetFlow)
@@ -76,6 +78,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             error in
             guard error == nil else {
                 DDLogError("Encountered an error setting up the network: \(error)")
+                completionHandler(error)
                 return
             }
 
@@ -91,6 +94,19 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
     }
 
     override func stopTunnelWithReason(reason: NEProviderStopReason, completionHandler: () -> Void) {
+        ProxyServer.mainProxy.stop()
+        ProxyServer.mainProxy = nil
+        RawSocketFactory.TunnelProvider = nil
+
+        if enablePacketProcessing {
+            interface.stop()
+            interface = nil
+            DNSServer.currentServer = nil
+        }
         completionHandler()
+
+        // For unknown reason, the extension will be running for several extra seconds, which prevents us from starting another configuration immediately. So we crash the extension now.
+        // I do not find any consequences.
+        assert(false)
     }
 }
