@@ -13,7 +13,7 @@ Specht can do everything SpechtLite can do.
 
 Plus, Specht sets up proxy automatically through API provided by Network Extension so you do not need to do it in System Preferences yourself. And Specht can redirect all TCP flows (even when apps ignore system proxy settings) to go through proxy servers.
 
-The core of Specht consists just a few lines of code calling [NEKit](https://github.com/zhuhaow/NEKit). Specht is mainly provided as a demo for developers who want to work with NEKit. Use SpechtLite if you are not interested in NEKit.
+The core of Specht consists just a few lines of code invoking [NEKit](https://github.com/zhuhaow/NEKit). Specht is mainly provided as a demo for developers who want to work with NEKit. Use SpechtLite if you are not interested in NEKit.
 
 Note there is no fancy GUI configuration panel. You set up Specht with configuration files as [SpechtLite](https://github.com/zhuhaow/SpechtLite).
 
