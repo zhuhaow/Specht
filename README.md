@@ -30,7 +30,7 @@ You have to sign this app yourself to run it which means you have to:
 After you get the permission from Apple, go to [Certificates, Identifiers & Profiles](https://developer.apple.com/account/mac/certificate/):
 
 1. Issue a Mac Development certificate (skip it if you already have one).
-2. Register two App IDs for the app and its embedded extension, what Specht uses can be found in the XCode, you can change them if you want (I suggest not changing it until you get everything up and running.) Don't forget to select "Personal VPN".
+2. Register two App IDs for the app and its embedded extension, what Specht uses can be found in the XCode, you can change them if you want (I suggest not changing them until you get everything up and running.) Don't forget to select "Personal VPN".
 3. Go to provision to add two new profiles, select "Mac App Development", and follow the guide, do include Network Extension entitlement. 
 
 Now you can sign the app, in Build Settings, set Provisioning Profile to the correct provision files just created and build.
@@ -50,8 +50,6 @@ If you have any questions, please ask at [![Join the chat at https://gitter.im/z
 Do not open an issue unless it is one.
 
 It's best if you can leave an issue relating to NEKit at [NEKit issues](https://github.com/zhuhaow/NEKit/issues).
-
-
 
 ## Can I upload this to the Mac App Store?
 Specht is published under GPLv3. 
