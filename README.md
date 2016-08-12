@@ -7,7 +7,7 @@
 ## Overview
 Specht is a simple proxy app built with [NEKit](https://github.com/zhuhaow/NEKit).
 
-**Unless you have a developer ID with Network Extension entitlement, you cannot use Specht. [Why?](https://github.com/zhuhaow/SpechtLite#full)** Please use [SpechtLite](https://github.com/zhuhaow/SpechtLite) instead.
+**Unless you have a developer ID with Network Extension entitlement, you cannot use Specht ([Why?](https://github.com/zhuhaow/SpechtLite#full)).** Please use [SpechtLite](https://github.com/zhuhaow/SpechtLite) instead.
 
 Specht can do everything SpechtLite can do.
 
