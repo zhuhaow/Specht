@@ -52,6 +52,14 @@ Do not open an issue unless it is one.
 It's best if you can leave an issue relating to NEKit at [NEKit issues](https://github.com/zhuhaow/NEKit/issues).
 
 ## Can I upload this to the Mac App Store?
-Specht is published under GPLv3. 
+Specht is released under GPLv3. Considering App Store license is not compatible with GPL (see VLC for example), you probably can't. 
 
-But please do not use the icon and the name if you do want to redistribute it.
+NEKit is licensed under BSD 3-Clause, so you can build an app with it and publish it on App Store instead.
+
+If you know a way which guarantees that:
+
+* If an app is derived from Specht it must be open sourced when it is distributed.
+* Such app can be pubished on App Store.
+* I can make sure that it does not use the name and icon of Specht.
+
+Please do let me know.
