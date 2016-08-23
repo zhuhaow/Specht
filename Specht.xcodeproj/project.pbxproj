@@ -37,6 +37,7 @@
 		36A719521D5B53A500DC35F5 /* tun2socks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A719491D5B539B00DC35F5 /* tun2socks.framework */; };
 		36B366701D56C658003343AA /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B3666F1D56C658003343AA /* VPNManager.swift */; };
 		36B366741D56CB33003343AA /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B366731D56CB33003343AA /* MD5.swift */; };
+		36C3D42A1D6C114F003069F0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 36C3D4291D6C114F003069F0 /* README.md */; };
 		36DD363A1CE7366500537ACA /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36164A581CE71F4000BAC90A /* MMDB.framework */; };
 		36DD363B1CE7366500537ACA /* MMDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36164A581CE71F4000BAC90A /* MMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		36DD363C1CE7366500537ACA /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36164A591CE71F4000BAC90A /* Sodium.framework */; };
@@ -122,6 +123,7 @@
 		36A719491D5B539B00DC35F5 /* tun2socks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tun2socks.framework; path = Carthage/Build/Mac/tun2socks.framework; sourceTree = "<group>"; };
 		36B3666F1D56C658003343AA /* VPNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
 		36B366731D56CB33003343AA /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		36C3D4291D6C114F003069F0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		36DCE5D31CA6972400C61029 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/Mac/CommonCrypto.framework; sourceTree = "<group>"; };
 		36DCE5DD1CA6997700C61029 /* Specht-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specht-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 		362A54331C9BD5E00056B653 = {
 			isa = PBXGroup;
 			children = (
+				36C3D4291D6C114F003069F0 /* README.md */,
 				36A719531D5B543700DC35F5 /* Carthage */,
 				362A54951C9CE8130056B653 /* Cartfile */,
 				362A543E1C9BD5E00056B653 /* Specht */,
@@ -388,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C3D42A1D6C114F003069F0 /* README.md in Sources */,
 				3643CE191CC283BD005A9C4B /* PacketTunnelProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

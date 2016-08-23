@@ -8,15 +8,21 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
 
     var proxyPort: Int!
 
+    var proxyServer: ProxyServer!
+
     override func startTunnelWithOptions(options: [String : NSObject]?, completionHandler: (NSError?) -> Void) {
         DDLog.removeAllLoggers()
-        DDLog.addLogger(DDASLLogger.sharedInstance(), withLevel: DDLogLevel.All)
+        // warning: setting to .Debug level might be way too verbose.
+        DDLog.addLogger(DDASLLogger.sharedInstance(), withLevel: DDLogLevel.Info)
+
+        // Use the build-in debug observer.
+        ObserverFactory.currentFactory = DebugObserverFactory()
 
         let configuration = Configuration()
         try! configuration.load(fromConfigString: (protocolConfiguration as! NETunnelProviderProtocol).providerConfiguration!["config"] as! String)
         RuleManager.currentManager = configuration.ruleManager
         proxyPort = configuration.proxyPort ?? 9090
-//
+
         RawSocketFactory.TunnelProvider = self
 
         // the `tunnelRemoteAddress` is meaningless because we are not creating a tunnel.
@@ -57,23 +63,6 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             networkSettings.DNSSettings = DNSSettings
         }
 
-        if enablePacketProcessing {
-            interface = TUNInterface(packetFlow: packetFlow)
-
-            let fakeIPPool = IPv4Pool(start: IPv4Address(fromString: "198.18.1.1"), end: IPv4Address(fromString: "198.18.255.255"))
-            let dnsServer = DNSServer(address: IPv4Address(fromString: "198.18.0.1"), port: Port(port: 53), fakeIPPool: fakeIPPool)
-            let resolver = UDPDNSResolver(address: IPv4Address(fromString: "114.114.114.114"), port: Port(port: 53))
-            dnsServer.registerResolver(resolver)
-            interface.registerStack(dnsServer)
-            DNSServer.currentServer = dnsServer
-
-            let udpStack = UDPDirectStack()
-            interface.registerStack(udpStack)
-
-            let tcpStack = TCPStack.stack
-            interface.registerStack(tcpStack)
-        }
-
         setTunnelNetworkSettings(networkSettings) {
             error in
             guard error == nil else {
@@ -82,31 +71,47 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
                 return
             }
 
-            ProxyServer.mainProxy = GCDHTTPProxyServer(address: IPv4Address(fromString: "127.0.0.1"), port: Port(port: UInt16(self.proxyPort)))
-            try! ProxyServer.mainProxy.start()
+            self.proxyServer = GCDHTTPProxyServer(address: IPv4Address(fromString: "127.0.0.1"), port: Port(port: UInt16(self.proxyPort)))
+            try! self.proxyServer.start()
 
             completionHandler(nil)
 
             if self.enablePacketProcessing {
+                self.interface = TUNInterface(packetFlow: self.packetFlow)
+
+                let fakeIPPool = IPv4Pool(start: IPv4Address(fromString: "198.18.1.1"), end: IPv4Address(fromString: "198.18.255.255"))
+                let dnsServer = DNSServer(address: IPv4Address(fromString: "198.18.0.1"), port: Port(port: 53), fakeIPPool: fakeIPPool)
+                let resolver = UDPDNSResolver(address: IPv4Address(fromString: "114.114.114.114"), port: Port(port: 53))
+                dnsServer.registerResolver(resolver)
+                self.interface.registerStack(dnsServer)
+                DNSServer.currentServer = dnsServer
+
+                let udpStack = UDPDirectStack()
+                self.interface.registerStack(udpStack)
+
+                let tcpStack = TCPStack.stack
+                tcpStack.proxyServer = self.proxyServer
+                self.interface.registerStack(tcpStack)
                 self.interface.start()
             }
         }
     }
 
     override func stopTunnelWithReason(reason: NEProviderStopReason, completionHandler: () -> Void) {
-        ProxyServer.mainProxy.stop()
-        ProxyServer.mainProxy = nil
-        RawSocketFactory.TunnelProvider = nil
-
         if enablePacketProcessing {
             interface.stop()
             interface = nil
             DNSServer.currentServer = nil
         }
+
+        proxyServer.stop()
+        proxyServer = nil
+        RawSocketFactory.TunnelProvider = nil
+
         completionHandler()
 
         // For unknown reason, the extension will be running for several extra seconds, which prevents us from starting another configuration immediately. So we crash the extension now.
         // I do not find any consequences.
-        assert(false)
+        exit(EXIT_SUCCESS)
     }
 }
