@@ -79,9 +79,9 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             if self.enablePacketProcessing {
                 self.interface = TUNInterface(packetFlow: self.packetFlow)
 
-                let fakeIPPool = IPv4Pool(start: IPv4Address(fromString: "198.18.1.1"), end: IPv4Address(fromString: "198.18.255.255"))
-                let dnsServer = DNSServer(address: IPv4Address(fromString: "198.18.0.1"), port: Port(port: 53), fakeIPPool: fakeIPPool)
-                let resolver = UDPDNSResolver(address: IPv4Address(fromString: "114.114.114.114"), port: Port(port: 53))
+                let fakeIPPool = IPv4Pool(start: IPv4Address(fromString: "198.18.1.1")!, end: IPv4Address(fromString: "198.18.255.255")!)
+                let dnsServer = DNSServer(address: IPv4Address(fromString: "198.18.0.1")!, port: Port(port: 53), fakeIPPool: fakeIPPool)
+                let resolver = UDPDNSResolver(address: IPv4Address(fromString: "114.114.114.114")!, port: Port(port: 53))
                 dnsServer.registerResolver(resolver)
                 self.interface.registerStack(dnsServer)
                 DNSServer.currentServer = dnsServer
