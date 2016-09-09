@@ -1,5 +1,5 @@
 #Specht
-[![Join the chat at https://gitter.im/zhuhaow/NEKit](https://badges.gitter.im/zhuhaow/NEKit.svg)](https://gitter.im/zhuhaow/NEKit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/zhuhaow/Specht.svg?branch=master)](https://travis-ci.org/zhuhaow/SpechtLite) [![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
+[![Join the chat at https://gitter.im/zhuhaow/NEKit](https://badges.gitter.im/zhuhaow/NEKit.svg)](https://gitter.im/zhuhaow/NEKit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Join the chat at https://telegram.me/NEKitGroup](https://img.shields.io/badge/chat-on%20Telegram-blue.svg)](https://telegram.me/NEKitGroup) [![Build Status](https://travis-ci.org/zhuhaow/Specht.svg?branch=master)](https://travis-ci.org/zhuhaow/SpechtLite) [![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
 ### A rule-based proxy app built with Network Extension for macOS.
 
 ![Splash image](imgs/splash.png)
@@ -45,7 +45,7 @@ Now you can sign the app, in Build Settings, set Provisioning Profile to the cor
 * When we disconnect, "SpechtTunnelPacketProvider" should terminate immediately. However, it will stil run for several seconds. If we connect to a new tunnel immediately, it will use the old "SpechtTunnelPacketProvider" process which will be killed in a few seconds later. So I have to terminate the extension explicitly as of now. Though there should be no consequences, the system thinks the extension die unexpectedly, so this probably must be fixed before any apps can be uploaded to the Mac App Store.
 
 ## I still need help ...
-If you have any questions, please ask at [![Join the chat at https://gitter.im/zhuhaow/NEKit](https://badges.gitter.im/zhuhaow/NEKit.svg)](https://gitter.im/zhuhaow/NEKit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). And yes, you can ask in Chinese.
+If you have any questions, please ask at [![Join the chat at https://gitter.im/zhuhaow/NEKit](https://badges.gitter.im/zhuhaow/NEKit.svg)](https://gitter.im/zhuhaow/NEKit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) or [![Join the chat at https://telegram.me/NEKitGroup](https://img.shields.io/badge/chat-on%20Telegram-blue.svg)](https://telegram.me/NEKitGroup). And yes, you can ask in Chinese.
 
 Do not open an issue unless it is one.
 
