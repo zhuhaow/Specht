@@ -4,6 +4,7 @@ import NEKit
 
 class PacketTunnelProvider: NEPacketTunnelProvider {
     var interface: TUNInterface!
+    // Since tun2socks is not stable, this is recommended to set to false
     var enablePacketProcessing = true
 
     var proxyPort: Int!
